@@ -29,7 +29,7 @@ do
     cljdir=$GITHUB_WORKSPACE$INPUT_DIRECTORY${i//\/$1}
     cd "$cljdir" || exit
     if  [[ $1 == "project.clj" ]]; then
-        lein pom
+        #lein pom
         mkdir projectclj
         mv pom.xml projectclj/
         maven-dependency-submission-linux-x64 --token "$GITHUB_TOKEN" --repository "$GITHUB_REPOSITORY" --branch-ref "$GITHUB_REF" --sha "$GITHUB_SHA" --directory "${cljdir}/projectclj" --job-name "${INPUT_DIRECTORY}${i}/projectclj"
