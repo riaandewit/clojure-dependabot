@@ -28,7 +28,7 @@ do
     i=${i/.}
     cljdir=$GITHUB_WORKSPACE$INPUT_DIRECTORY${i//\/$1}
     echo "CLJDIR:${cljdir}-----------------------------------------------------------------------"
-    ln -lah "${cljdir}/pom.xml"
+    ls -lah "${cljdir}/pom.xml"
     echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     cd "$cljdir" || exit
     if  [[ $1 == "project.clj" ]]; then
