@@ -105,7 +105,7 @@ do
         db_path="${cljdir}/projectclj/pom.xml"
         db_path=${db_path:1}
         {
-            echo "| Number | Package | Severity | GHSA | CVE | Patched in | Dependency level |"
+            echo "| Number | Package | Severity | GHSA1 | CVE | Patched in | Dependency level |"
             echo "| --- | --- | --- | --- | --- | --- | --- |"
         } >> "$GITHUB_STEP_SUMMARY"
         vulnerabilities_summary "$db_path" "$vul_page"
@@ -116,7 +116,7 @@ do
         db_path="${cljdir}/depsedn/pom.xml"
         db_path=${db_path:1}
         {
-            echo "| Number | Package | Severity | GHSA | CVE | Patched in | Dependency level |"
+            echo "| Number | Package | Severity | GHSA2 | CVE | Patched in | Dependency level |"
             echo "| --- | --- | --- | --- | --- | --- | --- |"
         } >> "$GITHUB_STEP_SUMMARY"
         vulnerabilities_summary "$db_path" "$vul_page"

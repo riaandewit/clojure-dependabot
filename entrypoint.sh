@@ -6,7 +6,7 @@ git config --global --add safe.directory "$GITHUB_WORKSPACE"
 git config --global user.email "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
 git config --global user.name "github-actions[bot]"
 if [[ "$INPUT_VERBOSE" == true ]]; then
-    echo "RYANS VERSION-(testing main commit)--------------------------------------------------------------------------------------------"
+    echo "RYANS VERSION 001"
     echo "Running local_dependency.sh"
 fi
 chmod +x /local_dependency.sh
