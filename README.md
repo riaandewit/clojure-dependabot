@@ -1,4 +1,6 @@
-# Dependabot for Clojure projects
+# TOY Dependabot for Clojure projects
+
+Don't use this! - https://github.com/pitch-io/clojure-dependabot is the real one - use that!
 
 Dependabot doesn't directly support Clojure projects, but it is possible to send the dependencies list to Dependabot through GitHub [Submission API](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/using-the-dependency-submission-api). 
 
